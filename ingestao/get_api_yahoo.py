@@ -5,7 +5,7 @@
 
 # COMMAND ----------
 
-%pip install yfinance
+# MAGIC %pip install yfinance
 
 # COMMAND ----------
 
@@ -14,7 +14,7 @@ dbutils.library.restartPython()
 
 # COMMAND ----------
 
-install yfinance
+
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, UTC
@@ -70,11 +70,3 @@ df.to_json(file_name, orient="records", lines=True, force_ascii=False)
 
 print(f"✅ JSON salvo em: {file_name}")
 
-
-# COMMAND ----------
-
-# MAGIC %sh ping -c 3 8.8.8.8
-
-# COMMAND ----------
-
-# MAGIC %sh ping -c 3 yahoo.com
